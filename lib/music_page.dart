@@ -55,7 +55,26 @@ class _MusicPageState extends State<MusicPage> {
                           child: Icon(Icons.menu),
                         )),
                   ],
-                )
+                ),
+                const SizedBox(
+                  height: 40,
+                ),
+                SizedBox(
+                  height: 250,
+                  width: double.infinity,
+                  child: NeuContainer(
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(12),
+                        child: Image.asset('assets/images/musicimg.jpg'),
+                        ),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 40,
+                ),
               ],
             ),
           ),
