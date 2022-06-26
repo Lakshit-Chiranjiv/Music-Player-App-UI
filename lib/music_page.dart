@@ -30,7 +30,7 @@ class _MusicPageState extends State<MusicPage> {
                         )),
                     Column(
                       children: [
-                        Text(
+                        const Text(
                           'P L A Y L I S T',
                           style: TextStyle(
                               fontSize: 14,
@@ -57,7 +57,7 @@ class _MusicPageState extends State<MusicPage> {
                   ],
                 ),
                 const SizedBox(
-                  height: 40,
+                  height: 60,
                 ),
                 SizedBox(
                   width: double.infinity,
@@ -70,7 +70,7 @@ class _MusicPageState extends State<MusicPage> {
                             borderRadius: BorderRadius.circular(12),
                             child: Image.asset('assets/images/musicimg.jpg'),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
                           Row(
@@ -91,7 +91,7 @@ class _MusicPageState extends State<MusicPage> {
                                   )
                                 ],
                               ),
-                              Icon(
+                              const Icon(
                                 Icons.favorite,
                                 color: Colors.red,
                                 size: 28,
@@ -104,19 +104,19 @@ class _MusicPageState extends State<MusicPage> {
                   ),
                 ),
                 const SizedBox(
-                  height: 40,
+                  height: 70,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
+                  children: const [
                     Text('0:00'),
                     Icon(Icons.shuffle),
                     Icon(Icons.repeat),
                     Text('5:29'),
                   ],
                 ),
-                SizedBox(
-                  height: 40,
+                const SizedBox(
+                  height: 20,
                 ),
                 NeuContainer(
                   child: Padding(
@@ -126,17 +126,17 @@ class _MusicPageState extends State<MusicPage> {
                       progressColor: Colors.amber,
                       backgroundColor: Colors.transparent,
                       percent: 0.7,
-                      barRadius: Radius.circular(10),
+                      barRadius: const Radius.circular(10),
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 40,
+                const SizedBox(
+                  height: 60,
                 ),
                 SizedBox(
                   height: 80,
                   child: Row(
-                    children: [
+                    children: const [
                       Expanded(
                         child: NeuContainer(
                           child: Icon(
@@ -148,7 +148,7 @@ class _MusicPageState extends State<MusicPage> {
                       Expanded(
                         flex: 2,
                         child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 24.0),
+                          padding: EdgeInsets.symmetric(horizontal: 24.0),
                           child: NeuContainer(
                             child: Icon(
                               Icons.pause,
