@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
 class NeuContainer extends StatelessWidget {
-  const NeuContainer({Key? key}) : super(key: key);
+  const NeuContainer({Key? key, required this.child}) : super(key: key);
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-          width: 300,
-          height: 300,
           decoration: BoxDecoration(
             color: Colors.blue[300],
             borderRadius: BorderRadius.circular(12),
@@ -23,6 +22,9 @@ class NeuContainer extends StatelessWidget {
                 offset: Offset(-5, -5)
               )
             ]
+          ),
+          child: Center(
+            child: child,
           ),
         );
   }
