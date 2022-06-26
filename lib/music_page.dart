@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:music_player/neu_container.dart';
 import 'package:percent_indicator/percent_indicator.dart';
+
 class MusicPage extends StatefulWidget {
   MusicPage({Key? key}) : super(key: key);
 
@@ -127,6 +128,44 @@ class _MusicPageState extends State<MusicPage> {
                       percent: 0.7,
                       barRadius: Radius.circular(10),
                     ),
+                  ),
+                ),
+                SizedBox(
+                  height: 40,
+                ),
+                SizedBox(
+                  height: 80,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: NeuContainer(
+                          child: Icon(
+                            Icons.skip_previous,
+                            size: 32,
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        flex: 2,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 24.0),
+                          child: NeuContainer(
+                            child: Icon(
+                              Icons.pause,
+                              size: 32,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: NeuContainer(
+                          child: Icon(
+                            Icons.skip_next,
+                            size: 32,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 )
               ],
