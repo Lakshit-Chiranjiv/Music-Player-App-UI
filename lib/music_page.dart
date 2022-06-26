@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:music_player/neu_container.dart';
+import 'package:music_player/widgets/music_details.dart';
 import 'package:music_player/widgets/music_image.dart';
 import 'package:music_player/widgets/top_bar.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -29,15 +30,7 @@ class _MusicPageState extends State<MusicPage> {
                 const SizedBox(
                   height: 70,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [
-                    Text('0:00'),
-                    Icon(Icons.shuffle),
-                    Icon(Icons.repeat),
-                    Text('5:29'),
-                  ],
-                ),
+                const MusicDetails(),
                 const SizedBox(
                   height: 20,
                 ),
