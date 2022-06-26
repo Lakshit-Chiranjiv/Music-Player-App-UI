@@ -12,16 +12,49 @@ class _MusicPageState extends State<MusicPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[300],
-      body: const Center(
-        child: SizedBox(
-          height: 100,
-          width: 100,
-          child: NeuContainer(
-            child: Text('Hello'),
+        backgroundColor: Colors.blue[300],
+        body: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const SizedBox(
+                        height: 70,
+                        width: 70,
+                        child: NeuContainer(
+                          child: Icon(Icons.arrow_back),
+                        )),
+                    Column(
+                      children: const [
+                        Text(
+                          'P L A Y L I S T',
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
+                        Text(
+                          'My Music',
+                          style: TextStyle(
+                            fontSize: 18,
+                          ),
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                        height: 70,
+                        width: 70,
+                        child: NeuContainer(
+                          child: Icon(Icons.menu),
+                        )),
+                  ],
+                )
+              ],
+            ),
           ),
-        ),
-      ),
-    );
+        ));
   }
 }
