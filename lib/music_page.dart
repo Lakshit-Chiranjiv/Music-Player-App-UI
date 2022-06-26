@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:music_player/neu_container.dart';
+import 'package:music_player/widgets/top_bar.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 class MusicPage extends StatefulWidget {
@@ -19,43 +20,7 @@ class _MusicPageState extends State<MusicPage> {
             padding: const EdgeInsets.all(16.0),
             child: Column(
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const SizedBox(
-                        height: 70,
-                        width: 70,
-                        child: NeuContainer(
-                          child: Icon(Icons.arrow_back),
-                        )),
-                    Column(
-                      children: [
-                        const Text(
-                          'P L A Y L I S T',
-                          style: TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                              fontFamily: 'Poppins'),
-                        ),
-                        Text(
-                          'My Music',
-                          style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w900,
-                              fontFamily: 'Poppins',
-                              color: Colors.grey[800]),
-                        )
-                      ],
-                    ),
-                    const SizedBox(
-                        height: 70,
-                        width: 70,
-                        child: NeuContainer(
-                          child: Icon(Icons.menu),
-                        )),
-                  ],
-                ),
+                const TopBar(),
                 const SizedBox(
                   height: 60,
                 ),
