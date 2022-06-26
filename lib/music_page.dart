@@ -33,13 +33,17 @@ class _MusicPageState extends State<MusicPage> {
                           'P L A Y L I S T',
                           style: TextStyle(
                             fontSize: 14,
-                            fontWeight: FontWeight.bold
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            fontFamily: 'Poppins'
                           ),
                         ),
                         Text(
                           'My Music',
                           style: TextStyle(
                             fontSize: 18,
+                            fontWeight: FontWeight.w900,
+                            fontFamily: 'Poppins'
                           ),
                         )
                       ],
