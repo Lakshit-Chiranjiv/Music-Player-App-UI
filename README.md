@@ -1,6 +1,15 @@
 # Music-Player-App-UI
 
-A new Flutter project.
+A new Flutter project to create a Music Player App Static UI
+
+### Techs Used
+
+![flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white) &nbsp;
+![dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white) &nbsp;
+
+
+### How it looks
+<img src=".assets/images/appss.jpg" alt="app ss" style="width: 300px;"></img>
 
 ## Getting Started
 
