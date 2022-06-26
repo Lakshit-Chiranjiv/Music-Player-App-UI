@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:music_player/neu_container.dart';
+import 'package:music_player/height_space.dart';
 import 'package:music_player/widgets/music_bar.dart';
 import 'package:music_player/widgets/music_controls.dart';
 import 'package:music_player/widgets/music_details.dart';
@@ -25,21 +25,13 @@ class _MusicPageState extends State<MusicPage> {
             child: Column(
               children: const [
                 TopBar(),
-                SizedBox(
-                  height: 60,
-                ),
+                HeightSpace(heightValue: 60),
                 MusicImage(),
-                SizedBox(
-                  height: 70,
-                ),
+                HeightSpace(heightValue: 70),
                 MusicDetails(),
-                SizedBox(
-                  height: 20,
-                ),
+                HeightSpace(heightValue: 20),
                 MusicBar(),
-                SizedBox(
-                  height: 60,
-                ),
+                HeightSpace(heightValue: 60),
                 MusicControls()
               ],
             ),
