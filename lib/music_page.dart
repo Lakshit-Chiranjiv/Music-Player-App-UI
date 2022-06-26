@@ -28,23 +28,22 @@ class _MusicPageState extends State<MusicPage> {
                           child: Icon(Icons.arrow_back),
                         )),
                     Column(
-                      children: const [
+                      children: [
                         Text(
                           'P L A Y L I S T',
                           style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                            fontFamily: 'Poppins'
-                          ),
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              fontFamily: 'Poppins'),
                         ),
                         Text(
                           'My Music',
                           style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w900,
-                            fontFamily: 'Poppins'
-                          ),
+                              fontSize: 18,
+                              fontWeight: FontWeight.w900,
+                              fontFamily: 'Poppins',
+                              color: Colors.grey[800]),
                         )
                       ],
                     ),
@@ -60,15 +59,46 @@ class _MusicPageState extends State<MusicPage> {
                   height: 40,
                 ),
                 SizedBox(
-                  height: 250,
                   width: double.infinity,
                   child: NeuContainer(
                     child: Padding(
                       padding: const EdgeInsets.all(10.0),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(12),
-                        child: Image.asset('assets/images/musicimg.jpg'),
-                        ),
+                      child: Column(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(12),
+                            child: Image.asset('assets/images/musicimg.jpg'),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    'DarkSide',
+                                    style: TextStyle(
+                                        fontSize: 24,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Text(
+                                    'Alan Walker',
+                                    style: TextStyle(color: Colors.white),
+                                  )
+                                ],
+                              ),
+                              Icon(
+                                Icons.favorite,
+                                color: Colors.red,
+                                size: 28,
+                              )
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
