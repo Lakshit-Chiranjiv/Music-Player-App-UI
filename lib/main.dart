@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music_player/music_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,13 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Music Player App UI',
+      title: 'Music Player App UI',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        appBar: AppBar(),
-      ),
+      home: MusicPage(),
     );
   }
 }
