@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:music_player/neu_container.dart';
 import 'package:music_player/widgets/music_bar.dart';
+import 'package:music_player/widgets/music_controls.dart';
 import 'package:music_player/widgets/music_details.dart';
 import 'package:music_player/widgets/music_image.dart';
 import 'package:music_player/widgets/top_bar.dart';
@@ -22,58 +23,24 @@ class _MusicPageState extends State<MusicPage> {
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
-              children: [
-                const TopBar(),
-                const SizedBox(
+              children: const [
+                TopBar(),
+                SizedBox(
                   height: 60,
                 ),
-                const MusicImage(),
-                const SizedBox(
+                MusicImage(),
+                SizedBox(
                   height: 70,
                 ),
-                const MusicDetails(),
-                const SizedBox(
+                MusicDetails(),
+                SizedBox(
                   height: 20,
                 ),
-                const MusicBar(),
-                const SizedBox(
+                MusicBar(),
+                SizedBox(
                   height: 60,
                 ),
-                SizedBox(
-                  height: 80,
-                  child: Row(
-                    children: const [
-                      Expanded(
-                        child: NeuContainer(
-                          child: Icon(
-                            Icons.skip_previous,
-                            size: 32,
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        flex: 2,
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 24.0),
-                          child: NeuContainer(
-                            child: Icon(
-                              Icons.pause,
-                              size: 32,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        child: NeuContainer(
-                          child: Icon(
-                            Icons.skip_next,
-                            size: 32,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                )
+                MusicControls()
               ],
             ),
           ),
