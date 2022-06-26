@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:music_player/neu_container.dart';
+import 'package:music_player/widgets/music_image.dart';
 import 'package:music_player/widgets/top_bar.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
@@ -24,50 +25,7 @@ class _MusicPageState extends State<MusicPage> {
                 const SizedBox(
                   height: 60,
                 ),
-                SizedBox(
-                  width: double.infinity,
-                  child: NeuContainer(
-                    child: Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: Column(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(12),
-                            child: Image.asset('assets/images/musicimg.jpg'),
-                          ),
-                          const SizedBox(
-                            height: 20,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: const [
-                                  Text(
-                                    'DarkSide',
-                                    style: TextStyle(
-                                        fontSize: 24,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                  Text(
-                                    'Alan Walker',
-                                    style: TextStyle(color: Colors.white),
-                                  )
-                                ],
-                              ),
-                              const Icon(
-                                Icons.favorite,
-                                color: Colors.red,
-                                size: 28,
-                              )
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
+                const MusicImage(),
                 const SizedBox(
                   height: 70,
                 ),
