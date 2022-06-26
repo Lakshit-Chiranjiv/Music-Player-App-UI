@@ -105,6 +105,15 @@ class _MusicPageState extends State<MusicPage> {
                 const SizedBox(
                   height: 40,
                 ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text('0:00'),
+                    Icon(Icons.shuffle),
+                    Icon(Icons.repeat),
+                    Text('5:29'),
+                  ],
+                )
               ],
             ),
           ),
