@@ -9,7 +9,7 @@ A new Flutter project to create a Music Player App Static UI
 
 
 ### How it looks
-<img src=".assets/images/appss.jpg" alt="app ss" style="width: 300px;"></img>
+<img src=".assets/images/appss.png" alt="app ss" style="width: 300px;"></img>
 
 ## Getting Started
 
