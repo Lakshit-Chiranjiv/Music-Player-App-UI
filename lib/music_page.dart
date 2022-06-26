@@ -13,8 +13,14 @@ class _MusicPageState extends State<MusicPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue[300],
-      body: Center(
-        child: NeuContainer()
+      body: const Center(
+        child: SizedBox(
+          height: 100,
+          width: 100,
+          child: NeuContainer(
+            child: Text('Hello'),
+          ),
+        ),
       ),
     );
   }
